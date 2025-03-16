@@ -1,0 +1,144 @@
+@import url(./stylesheet.css);
+@import url(./grid.css);
+
+:root{
+    --black: #000;
+    --grey1: #8A8A8A;
+    --grey2:#ACACAC;
+    --orange:#FF7426;
+    --white: #fff;
+}
+
+/*______________OUR TRACKS 1 ____________*/
+
+/*_________________TOP____________*/
+.our-tracks1 .top{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 63px;
+}
+
+.our-tracks1 .top .img-2{
+    position: relative;
+}
+
+.our-tracks1 .top .img-2 svg{
+    width: 114px;
+    height: 138px;
+    position: absolute;
+    top: -53px;
+    left: 50px;
+}
+
+.our-tracks1 .top .img-1{
+    position: relative;
+}
+
+.our-tracks1 .top .img-1 img{
+    width: 117.604px;
+    height: 108.354px;
+    position: absolute;
+    top: -53px;
+    right: 50px;
+}
+
+.our-tracks1 .top .text-group{
+    text-align: center;
+}
+.our-tracks1 .top .text-group h1{
+    font-size: 50px;
+    color: var(--black);
+    font-family: jost;
+    font-weight: 600;
+}
+.our-tracks1 .top .text-group p{
+    color: var(--grey1);
+    font-size: 20px;
+    font-weight: 500;
+    font-family:Poppins;
+}
+
+/*______________________ITEMS_____________*/
+
+.our-tracks1 .courses{
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.our-tracks1 .courses .item{
+    width: 490px;
+    padding: 13px 13px 0 13px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white);
+    position: relative;
+}
+
+.our-tracks1 .courses .item .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-tracks1 .courses .item .rate li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item .name-price{
+    border-bottom: 1.5px dotted #ACACAC;
+}
+
+.our-tracks1 .courses .item .name-price .name{
+    color: var(--black);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item .name-price .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.our-tracks1 .courses .item .detailes{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 53px;
+}
+
+.our-tracks1 .courses .item .detailes li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.our-tracks1 .courses .item .detailes li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.our-tracks1 .courses .item .button{
+    position: relative;
+}
+
+.our-tracks1 .courses .item .button button{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 13px 36px;
+    border-radius: 96px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);  
+    position: absolute;  
+    right: 142px;
+    bottom: -25px;
+}

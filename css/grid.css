@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    max-width: 1530px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: flex;
+    
+    margin-left: -15px;
+    margin-right: -15px;  
+}
+.col-1 , .col-2 , .col-3 , .col-4 , .col-5 , .col-6 , .col-7 , .col-8 , .col-9 , .col-10 , .col-11 , .col-12 , .col-auto {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1{
+    /* (100% / 12) * 1 */
+    width: 8.333333333%;
+}
+
+.col-2{
+    /* (100% / 12) * 2 */
+    width: 16.6667;
+}
+
+.col-3{
+    /* (100% / 12) * 3 */
+    width: 25%;
+}
+
+.col-4{
+    /* (100% / 12) * 4 */
+    width: 33.333%;
+}
+
+.col-5{
+    /* (100% / 12) * 5 */
+    width: 41.667%;
+}
+
+.col-6{
+    /* (100% / 12) * 6 */
+    width: 50%;
+}
+
+.col-7{
+    /* (100% / 12) * 7 */
+    width: 58.333%;
+}
+
+.col-8 {
+    /* (100% / 12) * 8 */
+    width: 66.667%;
+}
+
+.col-9 {
+    /* (100% / 12) * 9 */
+    width: 75%;
+}
+
+.col-10 {
+    /* (100% / 12) * 10 */
+    width: 83.333%;
+}
+
+.col-11 {
+    /* (100% / 12) * 11 */
+    width: 91.667%;
+}
+
+.col-12 {
+    /* (100% / 12) * 12 */
+    width: 100%;
+}
+
+.col-auto {
+    width: auto;
+}
+
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
