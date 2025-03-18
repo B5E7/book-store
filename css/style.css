@@ -11,6 +11,67 @@
 
 /*______________OUR TRACKS 1 ____________*/
 
+@media (min-width: 1500px){
+    .our-tracks1 .top-res{
+        display: none;
+    }
+    .our-tracks1 .item-3-res{
+        display: none;
+    }
+    .our-tracks1 .item-2-res{
+        display: none;
+    }
+}
+
+@media (max-width: 1500px){
+    .our-tracks1 .top-res{
+        display: flex;
+    }
+    .our-tracks1 .top{
+        display: none;
+    }
+    .our-tracks1 .item-3-res{
+        display: none;
+    }
+    .our-tracks1 .item-2-res{
+        display: none;
+    }
+}
+
+@media (max-width:1400px){
+
+    .our-tracks1 .courses .item-3{
+        display: none;
+    }
+    .our-tracks1 .item-3-res{
+        display: block;
+    }
+    .our-tracks1 .item-2-res{
+        display: none;
+    }
+    .our-tracks1 .courses .item-1 .button button{
+        right: 125px !important;
+    }
+    .our-tracks1 .courses .item-2 .button button{
+        right: 125px !important;
+    }
+}
+
+@media(max-width:1000px){
+    .our-tracks1 .courses .item-2{
+        display: none;
+    }
+    .our-tracks1 .item-2-res{
+        display: block;
+    }
+    .our-tracks1 .courses .item-1 .button button{
+        right: 125px !important;
+    }
+    .our-tracks1 .courses .item-2 .button button{
+        right: 125px !important;
+    }
+}
+
 /*_________________TOP____________*/
 .our-tracks1 .top{
     justify-content: space-between;
@@ -28,7 +89,6 @@
     height: 138px;
     position: absolute;
     top: -53px;
-    left: 50px;
 }
 
 .our-tracks1 .top .img-1{
@@ -40,7 +100,7 @@
     height: 108.354px;
     position: absolute;
     top: -53px;
-    right: 50px;
+    right: -10px;
 }
 
 .our-tracks1 .top .text-group{
@@ -59,53 +119,116 @@
     font-family:Poppins;
 }
 
+
+/*_______________TOP FOR RESPONSIVE_______________*/
+
+.our-tracks1 .top-res{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 63px;
+}
+
+
+
+.our-tracks1 .top-res .img-2 svg{
+    width: 114px;
+    height: 138px;
+
+}
+
+
+
+.our-tracks1 .top-res .img-1 img{
+    width: 117.604px;
+    height: 108.354px;
+
+}
+
+.our-tracks1 .top-res .text-group{
+    text-align: center;
+}
+.our-tracks1 .top-res .text-group h1{
+    font-size: 50px;
+    color: var(--black);
+    font-family: jost;
+    font-weight: 600;
+}
+.our-tracks1 .top-res .text-group p{
+    color: var(--grey1);
+    font-size: 20px;
+    font-weight: 500;
+    font-family:Poppins;
+}
+
 /*______________________ITEMS_____________*/
+
+.our-tracks1 .all-courses{
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .our-tracks1 .courses{
     gap: 30px;
     margin-top: 65px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.our-tracks1 .courses .item{
-    width: 490px;
+
+/*____________________________ITEM-1__________________________________*/
+
+.our-tracks1 .courses .item-1{
     padding: 13px 13px 0 13px;
     border-radius: 14px;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
     background-color: var(--white);
-    position: relative;
 }
 
-.our-tracks1 .courses .item .rate{
+.our-tracks1 .courses .item-1:hover{
+    outline:3px solid var(--orange);
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+.our-tracks1 .courses .item-1 .img img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.our-tracks1 .courses .item-1 .rate{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.our-tracks1 .courses .item .rate li p{
+.our-tracks1 .courses .item-1 .rate li p{
     color: var(--grey2);
     font-size: 16px;
     font-family: Poppins;
     font-weight: 500;
 }
 
-.our-tracks1 .courses .item .name-price{
+.our-tracks1 .courses .item-1 .name-price{
     border-bottom: 1.5px dotted #ACACAC;
 }
 
-.our-tracks1 .courses .item .name-price .name{
+.our-tracks1 .courses .item-1 .name-price .name{
     color: var(--black);
     font-size: 20px;
     font-family: Poppins;
     font-weight: 500;
 }
 
-.our-tracks1 .courses .item .name-price .price{
+.our-tracks1 .courses .item-1 .name-price .price{
     color: var(--orange);
     font-size: 20px;
     font-family: Poppins;
     font-weight: 600;
 }
 
-.our-tracks1 .courses .item .detailes{
+.our-tracks1 .courses .item-1 .detailes{
     display: flex;
     gap: 14px;
     align-items: center;
@@ -113,23 +236,23 @@
     padding-bottom: 53px;
 }
 
-.our-tracks1 .courses .item .detailes li{
+.our-tracks1 .courses .item-1 .detailes li{
     display: flex;
     align-items: center;
     gap: 9px;
 }
-.our-tracks1 .courses .item .detailes li p{
+.our-tracks1 .courses .item-1 .detailes li p{
     color: var(--grey2);
     font-size: 16px;
     font-weight: 500;
     font-family: Poppins;
 }
 
-.our-tracks1 .courses .item .button{
+.our-tracks1 .courses .item-1 .button{
     position: relative;
 }
 
-.our-tracks1 .courses .item .button button{
+.our-tracks1 .courses .item-1 .button button{
     font-size: 25px;
     font-family: Roboto;
     font-weight: 500;
@@ -139,6 +262,411 @@
     color: var(--white);
     background-color: var(--orange);  
     position: absolute;  
-    right: 142px;
+    right: 104px;
     bottom: -25px;
+}
+
+.our-tracks1 .courses .item-1 .button button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    outline: 3px solid var(--orange);
+    cursor: pointer;
+}
+
+
+/*____________________________ITEM-2___________________________*/
+
+.our-tracks1 .courses .item-2{
+    padding: 13px 13px 0 13px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white);
+}
+
+.our-tracks1 .courses .item-2:hover{
+    outline:3px solid var(--orange);
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+.our-tracks1 .courses .item-2 .img img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.our-tracks1 .courses .item-2 .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-tracks1 .courses .item-2 .rate li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item-2 .name-price{
+    border-bottom: 1.5px dotted #ACACAC;
+}
+
+.our-tracks1 .courses .item-2 .name-price .name{
+    color: var(--black);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item-2 .name-price .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.our-tracks1 .courses .item-2 .detailes{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 53px;
+}
+
+.our-tracks1 .courses .item-2 .detailes li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.our-tracks1 .courses .item-2 .detailes li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.our-tracks1 .courses .item-2 .button{
+    position: relative;
+}
+
+.our-tracks1 .courses .item-2 .button button{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 13px 36px;
+    border-radius: 96px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);  
+    position: absolute;  
+    right: 104px;
+    bottom: -25px;
+}
+
+.our-tracks1 .courses .item-2 .button button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    outline: 3px solid var(--orange);
+    cursor: pointer;
+}
+
+
+/*____________________________ITEM-2-res___________________________*/
+
+.our-tracks1 .res{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.our-tracks1 .item-2-res{
+    padding: 13px 13px 0 13px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white);
+    margin-top: 40px;
+
+}
+
+.our-tracks1 .item-2-res:hover{
+    outline:3px solid var(--orange);
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+.our-tracks1 .item-2-res .img img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.our-tracks1 .item-2-res .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-tracks1 .item-2-res .rate li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .item-2-res .name-price{
+    border-bottom: 1.5px dotted #ACACAC;
+}
+
+.our-tracks1 .item-2-res .name-price .name{
+    color: var(--black);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .item-2-res .name-price .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.our-tracks1 .item-2-res .detailes{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 53px;
+}
+
+.our-tracks1 .item-2-res .detailes li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.our-tracks1 .item-2-res .detailes li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.our-tracks1 .item-2-res .button{
+    position: relative;
+}
+
+.our-tracks1 .item-2-res .button button{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 13px 36px;
+    border-radius: 96px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);  
+    position: absolute;  
+    right: 125px;
+    bottom: -25px;
+}
+
+.our-tracks1 .item-2-res .button button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    outline: 3px solid var(--orange);
+    cursor: pointer;
+}
+
+/*____________________________ITEM-3___________________________*/
+
+.our-tracks1 .courses .item-3{
+    padding: 13px 13px 0 13px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white);
+}
+
+.our-tracks1 .courses .item-3:hover{
+    outline:3px solid var(--orange);
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+.our-tracks1 .courses .item-3 .img img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.our-tracks1 .courses .item-3 .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-tracks1 .courses .item-3 .rate li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item-3 .name-price{
+    border-bottom: 1.5px dotted #ACACAC;
+}
+
+.our-tracks1 .courses .item-3 .name-price .name{
+    color: var(--black);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .courses .item-3 .name-price .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.our-tracks1 .courses .item-3 .detailes{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 53px;
+}
+
+.our-tracks1 .courses .item-3 .detailes li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.our-tracks1 .courses .item-3 .detailes li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.our-tracks1 .courses .item-3 .button{
+    position: relative;
+}
+
+.our-tracks1 .courses .item-3 .button button{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 13px 36px;
+    border-radius: 96px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);  
+    position: absolute;  
+    right: 104px;
+    bottom: -25px;
+}
+
+.our-tracks1 .courses .item-3 .button button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    outline: 3px solid var(--orange);
+    cursor: pointer;
+}
+
+
+/*____________________________ITEM-3-res___________________________*/
+
+.our-tracks1 .item-3-res{
+    padding: 13px 13px 0 13px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--white);
+    margin-top: 40px;
+    align-self: center;
+}
+
+.our-tracks1 .item-3-res:hover{
+    outline:3px solid var(--orange);
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+.our-tracks1 .item-3-res .img img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.our-tracks1 .item-3-res .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-tracks1 .item-3-res .rate li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .item-3-res .name-price{
+    border-bottom: 1.5px dotted #ACACAC;
+}
+
+.our-tracks1 .item-3-res .name-price .name{
+    color: var(--black);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.our-tracks1 .item-3-res .name-price .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.our-tracks1 .item-3-res .detailes{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 53px;
+}
+
+.our-tracks1 .item-3-res .detailes li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.our-tracks1 .item-3-res .detailes li p{
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.our-tracks1 .item-3-res .button{
+    position: relative;
+}
+
+.our-tracks1 .item-3-res .button button{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 13px 36px;
+    border-radius: 96px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);  
+    position: absolute;  
+    right: 125px;
+    bottom: -25px;
+}
+
+.our-tracks1 .item-3-res .button button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    outline: 3px solid var(--orange);
+    cursor: pointer;
 }
